@@ -15,11 +15,6 @@ namespace Zad1_MailObject
             return JsonSerializer.Serialize(this);
         }
 
-        public static MailObject FromJson(string json)
-        {
-            return JsonSerializer.Deserialize<MailObject>(json);
-        }
-
         public MailMessage ToMailMessage()
         {
             var message = new MailMessage();

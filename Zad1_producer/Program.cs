@@ -2,6 +2,7 @@
 using System.Text;
 using Zad1_MailObject;
 
+//in asp.net app I would try to fit connection settings in appsettings.json
 ConnectionFactory factory = new ConnectionFactory();
 factory.Uri = new Uri(uriString:"amqp://guest:guest@localhost:5672");
 factory.ClientProvidedName = "Producer app";
